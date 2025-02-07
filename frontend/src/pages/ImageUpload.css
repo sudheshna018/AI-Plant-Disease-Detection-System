@@ -1,0 +1,194 @@
+/* General Styling */
+.body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    width:100%;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container1 {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    /* max-width: 100; */
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/* Upload Section */
+.upload-section {
+    flex: 1 1 50%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #065f46;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    border: 2px dashed #60a5fa;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #f0f9ff;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.upload-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#upload-preview {
+    margin-bottom: 15px;
+}
+
+.upload-icon {
+    width: 80px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-label {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-label:hover {
+    background-color: #2563eb;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-info {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 10px;
+}
+
+/* Result Container */
+.result-container {
+    flex: 1 1 45%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding-top: 60px;
+}
+
+.result-container h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.result-box {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 15px;
+    background: #ffffff;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.result-box img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-button {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.details-button:hover {
+    background-color: #059669;
+}
+
+/* Disease Details Section */
+.disease-details {
+    background: #f0fdf4;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: left;
+    color: #065f46;
+}
+
+.disease-details h3 {
+    font-size: 18px;
+    color: #047857;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.disease-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Error Message */
+.error {
+    color: #ef4444;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .upload-section, .result-container {
+        flex: 1 1 100%;
+    }
+}
